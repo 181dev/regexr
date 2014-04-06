@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>RegExr: Learn, Build, & Test RegEx</title>
+	<title>RegExr: オンラインで正規表現を学ぼう（日本語訳）</title>
 
 	<script>
 		if(self !== top) { top.location = self.location; }
@@ -72,15 +72,6 @@
 	<link rel="stylesheet" href="css/regexr.css?no=<%=noCache %>">
 	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
 
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-3579542-6', 'regexr.com');
-		ga('send', 'pageview', '/');
-	</script>
 </head>
 <body>
 
@@ -148,22 +139,22 @@
 	</div>
 
 	<div class="content">
-		<b>RegExr is an online tool to <b>learn</b>, <b>build</b>, & <b>test</b> Regular Expressions (RegEx / RegExp).</b>
+		<b>RegExrで正規表現の<b>学習</b>、<b>作成</b>、<b>検証</b>。</b>
 		<hr/>
 		<ul>
-			<li>Results update in <b>real-time</b> as you type.</li>
-			<li><b>Roll over</b> a match or expression for details.</li>
-			<li><b>Save</b> & <b>share</b> expressions with others.</li>
-			<li>Explore the <b>Library</b> for help & examples.</li>
-			<li><b>Undo</b> & <b>Redo</b> with {{getCtrlKey()}}-Z / Y.</li>
-			<li>Search for & rate <b>Community</b> patterns.</li>
+			<li><b>リアルタイム</b>にマッチ結果を表示します。</li>
+			<li>正規表現に<b>ロールオーバー</b>すると、説明がポップアップします。</li>
+			<li>正規表現を<b>保存</b> & <b>共有</b>できます。</li>
+			<li><b>ライブラリ</b>から、正規表現のヘルプと実例を探しましょう。</li>
+			<li>{{getCtrlKey()}}-Z / YでUndo, Redoできます。</li>
+			<li><b>コミュニティ</b>の正規表現をお気に入り出来ます。</li>
 		</ul>
 	</div>
 </div>
 
 <div class="doc subst-disabled" id="docview">
 	<div class="title expr">
-		Expression
+		正規表現
 		<ul class="buttonbar">
 			<li class="button share" data-icon="&#xE309;">share</li> <!-- share: E309, new win: E152  -->
 			<li class="button save" data-icon="&#xE073;">save</li> <!-- file: E359, bookmark: E073-->
@@ -179,11 +170,11 @@
 		<div class="measure"></div>
 		<canvas class="canvas" width="1" height="1"></canvas>
 		<textarea class="default">
-Welcome to RegExr v2.0 by gskinner.com!
+RegExr v2.0 by gskinner.comへようこそ！
 
-Edit the Expression & Text to see matches. Roll over matches or the expression for details. Undo mistakes with {{ctrl}}-z. Save & Share expressions with friends or the Community. A full Reference & Help is available in the Library, or watch the video Tutorial.
+正規表現とテキストを編集し、マッチング結果を見てください！マッチング結果や正規表現にロールオーバーすると、説明が表示されます。{{ctrl}}-zでUndoを行えます。正規表現を保存し、友人やコミュニティに共有してください。ライブラリ内にリファレンス、ドキュメントがあります。もしくは、チュートリアルからビデオを見て下さい。
 
-Sample text for testing:
+下記はテスト用のテキストです:
 abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ
 0123456789 +-.,!@#$%^&*();\/|&lt;>"'
 12345 -98.7 3.141 .6180 9,000 +42

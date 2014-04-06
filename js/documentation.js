@@ -149,9 +149,9 @@ var library = {
 				},
 				{
 				id:"range",
-				tip:"Matches a character in the range {{getChar(prev)}} to {{getChar(next)}} (char code {{prev.code}} to {{next.code}}).",
+				tip:"{{getChar(prev)}} ～ {{getChar(next)}} (文字コード {{prev.code}} ～ {{next.code}})の範囲の文字にマッチする。",
 				example:["[g-s]","abcdefghijklmnopqrstuvwxyz"],
-				desc: "Matches a character having a character code between the two specified characters inclusive.",
+				desc: "指定した２つの文字コードの間の文字にマッチする。（指定文字を含む）",
 				token:"[A-Z]"
 				}
 			]
