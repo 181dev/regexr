@@ -78,21 +78,21 @@ var library = {
 			kids: [
 				{
 				id:"dot",
-				desc:"Matches any character except line breaks.",
+				desc:"改行以外のすべての文字とマッチする.",
 				ext:" Equivalent to <code>[^\\n\\r]</code>.",
 				example:[".", "glib jocks vex dwarves!"],
 				token:"."
 				},
 				{
 				label:"match any",
-				desc:"A character set that can be used to match any character, including line breaks."+
+				desc:"改行を含むすべての文字とマッチする。"+
 					"<p>An alternative is <code>[^]</code>, but it is not supported in all browsers.</p>",
 				example:["[\\s\\S]", "glib jocks vex dwarves!"],
 				token:"[\\s\\S]"
 				},
 				{
 				id:"word",
-				desc:"Matches any word character (alphanumeric & underscore).",
+				desc:"ワード文字 (英数字 & アンダースコア)とマッチする.",
 				ext:" Only matches low-ascii characters (no accented or non-roman characters). Equivalent to <code>[A-Za-z0-9_]</code>",
 				example:["\\w","bonjour, mon fr\u00E8re"],
 				token:"\\w"
@@ -100,14 +100,14 @@ var library = {
 				{
 				id:"notword",
 				label: "not word",
-				desc:"Matches any character that is not a word character (alphanumeric & underscore).",
+				desc:"ワード文字 (英数字 & アンダースコア)以外とマッチする.",
 				ext:" Equivalent to <code>[^A-Za-z0-9_]</code>",
 				example:["\\W","bonjour, mon fr\u00E8re"],
 				token:"\\W"
 				},
 				{
 				id:"digit",
-				desc:"Matches any digit character (0-9).",
+				desc:"数字とマッチする (0-9).",
 				ext:" Equivalent to <code>[0-9]</code>.",
 				example:["\\d","+1-(444)-555-1234"],
 				token:"\\d"
@@ -115,35 +115,35 @@ var library = {
 				{
 				id:"notdigit",
 				label: "not digit",
-				desc:"Matches any character that is not a digit character (0-9).",
+				desc:"数字以外とマッチする (0-9).",
 				ext:" Equivalent to <code>[^0-9]</code>.",
 				example:["\\D","+1-(444)-555-1234"],
 				token:"\\D"
 				},
 				{
 				id:"whitespace",
-				desc:"Matches any whitespace character (spaces, tabs, line breaks).",
+				desc:"空白文字にマッチする (スペース, タブ, 改行).",
 				example:["\\s", "glib jocks vex dwarves!"],
 				token:"\\s"
 				},
 				{
 				id:"notwhitespace",
 				label: "not whitespace",
-				desc:"Matches any character that is not a whitespace character (spaces, tabs, line breaks).",
+				desc:"空白文字以外にマッチする (スペース, タブ, 改行).",
 				example:["\\S", "glib jocks vex dwarves!"],
 				token:"\\S"
 				},
 				{
 				id:"set",
 				label: "character set",
-				desc:"Match any character in the set.",
+				desc:"セットの中にある文字にマッチする.",
 				example:["[aeiou]","glib jocks vex dwarves!"],
 				token:"[ABC]"
 				},
 				{
 				id:"setnot",
 				label: "negated set",
-				desc:"Match any character that is not in the set.",
+				desc:"セットの中にない文字にマッチする.",
 				example:["[^aeiou]","glib jocks vex dwarves!"],
 				token:"[^ABC]"
 				},
